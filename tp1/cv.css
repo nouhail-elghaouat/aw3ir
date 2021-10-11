@@ -1,0 +1,16 @@
+table {
+    border: 1px solid black;
+    width: 100%  
+}
+
+th,
+td,
+tr{
+    border: 1px solid black;  
+}
+
+th{
+    text-align: left;
+    }
+
+
