@@ -1,33 +1,99 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP2</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+<head>
+    <script type="text/javascript" src="tp2.js"></script>
+    <link rel="stylesheet" href="tp2.css">
 
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
+    <title>TP2</title>
+
+</head>
+
+<body>
+    <br>
+    <form id="formulaire">
+        <h1> Formulaire d'inscription 2021/2022 </h1>
         
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="js/main.js"></script>-->
-    </head>
-    <body>        
-        <h1>tp2</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
-    </body>
+        <h4><u> Fédération royale Marocaine de football</u></h4>
+
+        <p>
+            <label for="Nom">Nom</label> 
+            <input type="text" name="Nom" id="Nom" />
+        </p>
+
+        <p>
+            <label for="Prenom">Prénom</label> 
+            <input type="text" name="Prenom" id="Prenom"/>
+        </p>
+
+        <p>
+            <label for="Date">Date de naissance</label> 
+            <input type="date" name="Date" id="Date"/>
+        </p>
+
+        <p>
+            <label for="Catégorie">Catégorie</label> 
+            <select name="Catégorie" id="Catégorie">
+                <option value="Adulte">Adulte</option>
+                <option value="Mineur">Mineur</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="Position">Position</label> 
+            <select name="Position" id="Position">
+                <option value="Gardien de but">Gardien de but</option>
+                <option value="Milieu défensif">Milieu défensif</option>
+                <option value="Milieu offensif">Milieu offensif</option>
+                <option value="Avant-centre">Avant-centre</option>
+                <option value="Remplaçant">Remplaçant</option>
+                
+            </select>
+        </p>
+        
+            <p>
+                <label for="Club">Club</label> 
+                <select name="Club" id="Club">
+                    <option value="WAC">WAC</option>
+                    <option value="RCA">RCA</option>
+                    <option value="FAR">FAR</option>
+                    <option value="KAC">KAC</option>
+                    
+                    
+                </select>
+            </p>
+            
+
+            <p>
+            <label for="Adresse">Adresse</label> 
+            <input type="text" name="Adresse" id="Adresse"/>
+        </p>
+
+        <p>
+            <label for="Email">Email</label> 
+            <input type="email" name="Email" id="Email" placeholder="Ex : jean123@.fr"/>
+        </p>
+
+
+        <br>
+
+        <div class="button">
+            <input type="button" value="Valider" onclick="validation()">
+        </div>
+
+        
+
+    </form>
+
+    <div id="error">
+    </div>
+
+    <br>
+
+    <div id="Resultat">
+    </div>
+    
+</body>
+
+
 </html>
